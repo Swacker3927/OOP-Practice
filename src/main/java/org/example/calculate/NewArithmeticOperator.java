@@ -1,6 +1,6 @@
-package org.example;
+package org.example.calculate;
 
 public interface NewArithmeticOperator {
     boolean supports(String operator);
-    double calculate(int operand1, int operand2);
+    double calculate(PositiveNumber operand1, PositiveNumber operand2);
 }

@@ -1,4 +1,4 @@
-package org.example;
+package org.example.calculate;
 
 public class SubtractionOperator implements NewArithmeticOperator {
     @Override
@@ -7,7 +7,7 @@ public class SubtractionOperator implements NewArithmeticOperator {
     }
 
     @Override
-    public double calculate(int operand1, int operand2) {
-        return operand1 - operand2;
+    public double calculate(PositiveNumber operand1, PositiveNumber operand2) {
+        return operand1.toInt() - operand2.toInt();
     }
 }

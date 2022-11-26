@@ -1,5 +1,6 @@
 package org.example;
 
-public interface PasswordGenerator {
+@FunctionalInterface
+public interface PasswordGeneratePolicy {
     String generatePassword();
 }
